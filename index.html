@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vamos viajar!</title>
+    <meta name="description" content="Vamos viajar">
+    <meta name="keywords" content="viagens e países">
+    <meta name="author" content="Mª Rita Correia de Araújo">
+    <meta http-equiv="refresh" content="30">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css\mystyle.css">
+
+  </head>
+
+<!---Content starts here -->
+
+  <body>
+    <header>
+
+      <a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+        </svg>
+      </a>
+
+      <div id="drawer" >
+        <nav>
+          <a href="#passos"> Vamos viajar! </a>
+          <a href="#referências"> Referências </a>
+          <a href="#imagens"> Bijagós! </a>
+          <a href="#video"> Vídeo </a>
+          <a href="#tabela"> Países </a>
+        </nav>
+      </div>
+
+
+      <h1>Bora viajar?</h1>
+      <p> We travel not to escape life, but for life not escape us!</p>
+      <hr>
+    </header>
+
+<!--- hiperligações -->
+
+  <nav id="tabletPC" class="col-3">
+    <a href="#passos"> Vamos viajar! </a>
+    <br />
+    <a href="#referências"> Referências </a>
+    <br/>
+    <a href="#imagens"> Bijagós! </a>
+    <br />
+    <a href="#video"> Vídeo </a>
+    <br />
+    <a href="#tabela"> Países </a>
+  </nav>
+
+<div id="container" class="col-9">
+
+<section class="slideshow-container">
+
+  <h2>Paraísos</h2>
+
+<article class="mySlides" class="fade">
+<figure>
+  <img src="imagens/Ilha_de_Mocambique.jpg">
+  <figcaption> Figure 1: Moçambique (Ilha de Moçambique) </figcaption>
+</figure>
+</article>
+
+<article class="mySlides" class="fade">
+<figure>
+  <img src="imagens/similan_island.jpg">
+  <figcaption>Figure 2: Tailândia (Similan Island) </figcaption>
+</figure>
+</article>
+
+<article class="mySlides" class="fade">
+<figure>
+  <img src="imagens/australia.jpg">
+  <figcaption> Figure 3: Austrália (Sydney) </figcaption>
+</figure>
+</article>
+
+<div class="dotpoints">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+</section>
+
+
+<!---LISTA NÃO ORDENADA -->
+
+<section>
+
+  <a name="passos">
+    <h2> Viajar é inesquecível! </h2>
+    <ul>
+        <li> Dicas para uma viagem de sonho </li>
+        <li> Imagens de sítios inesquecíveis </li>
+        <li> Sons que não te vão sair da cabeça </li>
+        <li> Experiências que podes encontrar </li>
+        <li> Países que deves conhecer </li>
+    </ul>
+</section>
+
+<!---LISTA NUMERADA -->
+
+<section>
+  <a name="referências">
+    <h2> Bloggers </h2>
+    <p> Dois bloggers que te podem interessar! </p>
+    <ol>
+        <li><u> Travel Lover Blog </u></li>
+        <li><u> Alma de Viajante </u></li>
+    </ol>
+</section>
+
+<!---Imagens e vídeo-->
+
+<section>
+  <a name="imagens">
+    <h2> Arquipélago dos Bijagós! </h2>
+    <p> Exemplo de um paraíso aqui ao lado </p>
+    <img src ="https://images.trustinnews.pt/uploads/sites/5/2019/10/venha-dai-conhecer-bijagos-o-ultimo-segredo-do-atlantico-2.jpg" width="800" height="auto">
+    <img src="imagens/imagem1.jpg" width="800" height="auto">
+    <img src="imagens/imagem2.jpeg" width="800" height="auto">
+</section>
+
+<section>
+  <a name="video">
+    <h2> Moçambique </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/L_Xnp5rbb-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+</section>
+
+<!---TABELA -->
+
+<section>
+  <a name="tabela">
+    <br />
+    <h2>Países</h2>
+    <table class="center" border="1px" width="auto" height="150">
+      <th colspan="3">Alguns Países que tive o privilégio de conhecer</th>
+
+      <tr>
+        <td>Guiné-Bissau</td>
+        <td>Moçambique</td>
+        <td>Austrália</td>
+      </tr>
+      <tr>
+        <td>Cabo Verde</td>
+        <td>Croácia</td>
+        <td>Egipto</td>
+      </tr>
+      <tr>
+        <td>Tailândia</td>
+        <td>Liubliana</td>
+        <td>Itália</td>
+        </tr>
+
+    </table>
+    <br />
+
+</section>
+
+</div>
+
+<!---INFORMAÇÃO LATERAL -->
+
+<aside class="col-2">
+  <h3> Tema selecionado </h3>
+  <p> Viajar é a única maneira de gastar dinheiro mas de se tornar mais rico! </p>
+</aside>
+
+<!---RODAPÉ-->
+
+<footer>
+  <h2> Desenvolvido por MªRita Correia de Araújo</h2>
+</footer>
+
+<!---JavaScript -->
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i = null;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+}
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+}
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+    let menu_icon = document.querySelector("#menu_icon");
+    let container = document.querySelector("#container");
+    let drawer = document.querySelector("#drawer");
+
+    menu_icon.addEventListener("click", function (e) {
+
+      drawer.classList.toggle("open");
+      e.stopPropagation();
+});
+  container.addEventListener("click", function () {
+    drawer.classList.remove("open");
+});
+
+</script>
+
+
+</body>
+
+  <!---Content ends here -->
+
+</html>
